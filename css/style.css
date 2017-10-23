@@ -1,4 +1,3 @@
-
 .clearfix::after,
 .clearfix::before {
   content: " ";
@@ -7,11 +6,6 @@
 }
 
 .wrapper {
-  width: 100%;
-  overflow: hidden;
-}
-
-.container {
   width: 100%;
   overflow: hidden;
 }
@@ -30,11 +24,6 @@
 
 .pad {
   padding: 15px 0;
-}
-
-.center {
-  width: 65%;
-  margin: 0 auto;
 }
 
 .Bolt__theme__txt {
@@ -78,11 +67,16 @@
   float: left;
 }
 
+.center{
+  margin-right: 120px;
+}
+
 .iphone {
   margin: 50px 160px 0 0;
   float: left;
   display: block;
   text-align: center;
+  margin-left: 200px;
 }
 
 .what__we__can__do {
@@ -99,7 +93,7 @@
   font-size: 20px;
   color: #fff;
   text-align: center;
-  padding-top: 35px;
+  padding: 35px 0 25px;
   word-break: break-all;
   line-height: 25px;
 }
@@ -116,15 +110,20 @@
   width: 100%;
   text-align: center;
   overflow: hidden;
+  line-height: 0;
 }
 
 .latest__work__imgs > li {
   display: inline-block;
   margin: 40px 100px 40px 0;
+  opacity: 0.7;
 }
 
-.latest__work__imgs li:last-child,
-.latest__work__imgs li:nth-child(3) {
+.latest__work__imgs > li:hover{
+  opacity: 1;
+}
+
+.latest__work__imgs > li:nth-child(3n) {
   margin-right: 0;
 }
 
@@ -184,51 +183,22 @@
   padding: 10px 0 100px;
 }
 
-.our__skills li:last-child {
-  margin-right: 0;
-}
-
 .contact__icon {
   width: 100%;
   text-align: center;
+  font-size: 0;
 }
 
-.contact__icon li {
+.contact__icon > li {
+  font-size: 15px;
   margin: 200px 0;
   color: #74cfae;
   display: inline-block;
   text-align: center;
-}
-
-.fa-facebook {
   padding: 25px 75px;
 }
 
-.fa-dribbble {
-  padding: 25px 75px;
-}
-
-.fa-twitter {
-  padding: 25px 75px;
-}
-
-.fa-envelope {
-  padding: 25px 75px;
-}
-
-.fa-facebook:hover {
-  background-color: #fff;
-}
-
-.fa-dribbble:hover {
-  background-color: #fff;
-}
-
-.fa-twitter:hover {
-  background-color: #fff;
-}
-
-.fa-envelope:hover {
+.contact__icon > li:hover {
   background-color: #fff;
 }
 
@@ -240,11 +210,6 @@
 
 @media screen and (max-width: 766px)
 {
-
-.container {
-  width: 100%;
-  overflow: hidden;
-}
 
 .fa-bolt{
   position: static;
@@ -266,7 +231,7 @@
   display: block;
 }
 
-nav.humburgar {
+.humburgar {
   width: 25px;
   height: 15px;
   top: 10px;
@@ -278,28 +243,23 @@ nav.humburgar {
   padding: 10px;
 }
 
-nav .line1{
+.line{
   width: 25px;
   height: 2px;
   background-color: #ddd;
+  position: absolute;
+}
+
+.high {
   top: 8px;
-  position: absolute;
 }
 
-nav .line2 {
-  width: 25px;
-  height: 2px;
-  background-color: #ddd;
+.mid {
   top: 16px;
-  position: absolute;
 }
 
-nav .line3 {
-  width: 25px;
-  height: 2px;
-  background-color: #ddd;
+.bot {
   top: 24px;
-  position: absolute;
 }
 
 #button {
@@ -313,15 +273,10 @@ nav .line3 {
   font-size: 80px;
   padding: 160px 0 20px;
   margin: 0;
-  color: #74cfae;
-  text-align: center;
 }
 
 .Bolt__theme__txt__sub {
-  font-size: 30px;
-  text-align: center;
   padding-bottom: 130px;
-  color: #c0c0c0;
   margin: 0;
 }
 
@@ -330,95 +285,9 @@ nav .line3 {
   margin: 0 auto;
 }
 
-.iphone {
-  display: block;
-  margin: 50px auto 0;
-  float: none;
-  text-align: center;
-  vertical-align: middle;
-}
-
-.what__we__can__do {
-  font-size: 24px;
-  color: #fff;
-  word-break: break-all;
-  text-align: center;
-  font-family: 'Raleway';
-}
-
 .what__we__can__do__sub__txt {
-  width: 95.5%;
-  font-size: 20px;
-  color: #fff;
-  text-align: center;
   padding: 35px 10px 15px;
-  line-height: 25px;
-}
-
-.our__latest__work {
-  font-size: 24px;
-  text-align: center;
-  color: #333;
-  font-family: 'Raleway';
-  margin: 50px 0 30px;
-}
-
-.latest__work__imgs {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.latest__work__imgs > li {
-  width: 100%;
-  float: none;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.latest__work__txt {
-  width: 100%;
-  text-align: center;
-  color: #c0c0c0;
-  padding: 90px 0 70px;
-  margin-left: 0;
-}
-
-.form {
-  padding-bottom: 70px;
-  width: 100%;
-  overflow: hidden;
-  text-align: center;
-}
-
-.btn__email{
-  position: static;
-}
-
-.btn__email {
-  background-color: #74cfae;
-  font-size: 12px;
-  padding: 14px 20px;
-  color: #fff;
-  border: 0;
-  text-align: center;
-}
-
-.our__skills__title {
-  color: #fff;
-  text-align: center;
-  padding: 50px 0;
-}
-
-.our__skills__img {
-  display: block;
-  margin: 0 auto;
-  padding: 0;
-  float: none;
-}
-
-.our__skills {
-  width: 100%;
-  position: relative;
+  box-sizing: border-box;
 }
 
 .our__skills__txt {
@@ -428,25 +297,17 @@ nav .line3 {
   padding: 20px 0 88px;
 }
 
-.contact__icon {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.contact__icon li {
-  color: #74cfae;
-  float: none;
+.contact__icon > li {
   padding: 50px 0;
   display: block;
-  overflow: hidden;
   margin: 0 15px;
 }
 
-.contact__icon li:first-child {
+.contact__icon > li:first-child {
   margin-top: 50px;
 }
 
-.contact__icon li:last-child {
+.contact__icon > li:last-child {
   margin-bottom: 50px;
 }
 
@@ -454,24 +315,21 @@ nav .line3 {
   background-color: #fff;
 }
 
-.contact__icon i {
+.contact__icon > i {
   padding: 0;
 }
 
 .footer__txt {
   padding: 30px 20px;
-  color: #fff;
-  float: right;
 }
 
 }
 
-@media screen and ( min-width: 767px) and ( max-width: 1199px)
+@media screen and ( max-width: 1199px)
 {
 
-.container {
-  width: 100%;
-  overflow: hidden;
+.center {
+  margin: 0;
 }
 
 .fa-bolt {
@@ -482,34 +340,15 @@ nav .line3 {
 .btn {
   position: relative;
   right: 0;
-  margin: 10px;
 }
 
 .iphone {
-  display: block;
   margin: 50px auto 0;
   float: none;
-  text-align: center;
-  vertical-align: middle;
 }
 
 .what__we__can__do {
-  font-size: 24px;
-  color: #fff;
-  text-align: center;
   padding-top: 20px;
-  font-family: 'Raleway';
-}
-
-.what__we__can__do__sub__txt {
-  width: 100%;
-  font-size: 20px;
-  color: #fff;
-  text-align: center;
-  padding: 35px;
-  word-break: break-all;
-  line-height: 25px;
-  margin: 0 auto;
 }
 
 .our__latest__work {
@@ -518,13 +357,10 @@ nav .line3 {
 
 .latest__work__imgs > li {
   width: 100%;
-  float: none;
-  text-align: center;
   margin: 0;
 }
 
-.latest__work__imgs > li:nth-child(3),
-.latest__work__imgs > li:nth-child(6){
+.latest__work__imgs > li:nth-child(3n) {
   margin-bottom: 80px;
 }
 
@@ -534,15 +370,11 @@ nav .line3 {
 
 .latest__work__txt {
   width: 100%;
-  float: none;
-  text-align: center;
   padding: 0 0 40px;
-  color: #c0c0c0;
   margin-left: 0;
 }
 
 .form {
-  width: 100%;
   text-align: center;
   margin: 0 0 70px;
 }
