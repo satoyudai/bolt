@@ -10,9 +10,99 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
+  <div class="wrapper">
+    <header class="container pad clearfix">
+      <i class="fa fa-bolt fa-3x" aria-hidden="true"></i>
+      <nav class="humburgar clearfix">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </nav>
+      <ul id="button">
+        <li><button class="btn">Contact</button></li>
+      </ul>
+    </header>
+    <main>
+      <section class="container grey">
+        <p class="Bolt__theme__txt">Bolt Theme</p>
+        <p class="Bolt__theme__txt__sub">FREE BOOTSTRAP THEMES</p>
+      </section>
+      <section class="container green">
+        <div class="center">
+          <img class="iphone" src="../bolt/img/iphone.png">
+          <p class="what__we__can__do">WHAT WE CAN DO</p>
+          <p class="what__we__can__do__sub__txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+      </section>
+      <section class="container grey">
+        <p class="our__latest__work">OUR LATEST WORK</p>
+        <figure>
+          <ul class="latest__work__imgs clearfix">
+            <li><img src="../bolt/img/01.jpg"></li>
+            <li><img src="../bolt/img/02.jpg"></li>
+            <li><img src="../bolt/img/03.jpg"></li>
+            <li><img src="../bolt/img/04.jpg"></li>
+            <li><img src="../bolt/img/05.jpg"></li>
+            <li><img src="../bolt/img/06.jpg"></li>
+          </ul>
+        </figure>
+        <p class="latest__work__txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+        <div class="form">
+          <button class="btn__email" type="button" name="aaa" value="aaa">Email Me!
+          </button>
+        </div>
+      </section>
+      <section class="container darkgrey clearfix">
+        <p class="our__skills__title">OUR SKILLS</p>
+        <ul class="our__skills">
+          <li class="our__skills__img">
+            <img src="../bolt/img/circle_01.png">
+            <br><p class="our__skills__txt">JavaScript</p>
+            </li>
+          <li class="our__skills__img">
+            <img src="../bolt/img/circle_02.png">
+            <br><p class="our__skills__txt">Bootstrap</p>
+          </li>
+          <li class="our__skills__img">
+            <img src="../bolt/img/circle_03.png">
+            <br><p class="our__skills__txt">WordPress</p>
+          </li>
+          <li class="our__skills__img">
+            <img src="../bolt/img/circle_04.png">
+            <br><p class="our__skills__txt">Photoshop</p>
+          </li>
+        </ul>
+      </section>
+      <section class="container grey clearfix">
+        <ul class="contact__icon">
+          <li><i class="fa fa-facebook fa-3x" aria-hidden="true"></i></li>
+          <li><i class="fa fa-dribbble fa-3x" aria-hidden="true"></i></li>
+          <li><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></li>
+          <li><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></li>
+        </ul>
+      </section>
+    </main>
+    <footer class="container green">
+      <p class="footer__txt">Crafted with<i class="fa fa-heart" aria-hidden="true"></i>by BlackTie.co.</p>
+    </footer>
+  </div>
 
-<script src="js/script.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</script>
+<script>
+jQuery(function($){
+      $('.humburgar').click(function(){
+         if ($('#button').css('display') == 'none') {
+          $('#button').slideDown('fast');
+        } else {
+           $('#button').slideUp('fast');
+         }
+      });
+        });
+</script>
 </body>
 </html>
